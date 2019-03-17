@@ -1,7 +1,7 @@
 const Node = require('../src/node');
 const MaxHeap = require('../src/max-heap');
 
-/*describe('MaxHeap', () => {
+describe('MaxHeap', () => {
 	describe('#constructor', () => {
 		const h = new MaxHeap();
 
@@ -44,7 +44,7 @@ const MaxHeap = require('../src/max-heap');
 		});
 	});
 
-	describe('#insertNode', () => {
+	/*describe('#insertNode', () => {
 		let h;
 
 		beforeEach(() => {
@@ -124,7 +124,7 @@ const MaxHeap = require('../src/max-heap');
 			expect(h.parentNodes[2]).to.equal(nodes[5]);
 			expect(h.parentNodes[3]).to.equal(nodes[6]);
 		});
-	});
+	});*/
 
 	describe('#shiftNodeUp', () => {
 		let h;
@@ -135,7 +135,7 @@ const MaxHeap = require('../src/max-heap');
 			h.root = new Node(0, 10);
 			h.root.appendChild(new Node(1, 5));
 			h.root.appendChild(new Node(2, 7));
-			h.root.left.appendChild(new Node(3, 20));*/
+			h.root.left.appendChild(new Node(3, 20));
 
 /**
         10                       20
@@ -145,7 +145,7 @@ const MaxHeap = require('../src/max-heap');
     20                       5
 **/
 
-/*			h.parentNodes = [
+			h.parentNodes = [
 				h.root.left,
 				h.root.right,
 				h.root.left.left,
@@ -303,7 +303,7 @@ const MaxHeap = require('../src/max-heap');
 		});
 	});
 
-	describe('#restoreRootFromLastInsertedNode', () => {
+	/*describe('#restoreRootFromLastInsertedNode', () => {
 		let h;
 
 		beforeEach(() => {
@@ -359,9 +359,9 @@ const MaxHeap = require('../src/max-heap');
 			expect(h.parentNodes.map(n=>n.priority)).to.deep.equal([16,14,13,0]);
 		});
 
-	});
+	});*/
 
-	describe('#shiftNodeDown', () => {
+	/*describe('#shiftNodeDown', () => {
 		let h;
 
 		beforeEach(() => {
@@ -380,7 +380,7 @@ const MaxHeap = require('../src/max-heap');
     5                          3
 **/
 
-	/*		h.parentNodes = [
+		/*	h.parentNodes = [
 				h.root.left,
 				h.root.right,
 				h.root.left.left,
@@ -434,7 +434,7 @@ const MaxHeap = require('../src/max-heap');
      5    8 11  6                   5   8 1   6
  **/
 
-     /*       h.shiftNodeDown(h.root);
+        /*    h.shiftNodeDown(h.root);
 
             expect(h.root).to.equal(newRoot);
             expect(h.root.right.left).to.equal(newDeepest);
@@ -461,7 +461,7 @@ const MaxHeap = require('../src/max-heap');
 			expect(h.shiftNodeDown.secondCall.args[0]).to.equal(nodeToShiftDown);
 			expect(h.shiftNodeDown.thirdCall.args[0]).to.equal(nodeToShiftDown);
 		});
-	});
+	});*/
 
 	describe('#size', () => {
 		it('returns current size of heap', () => {
@@ -496,4 +496,4 @@ const MaxHeap = require('../src/max-heap');
 			expect(h.isEmpty()).to.equal(true);
 		});
 	});
-});*/
+});
